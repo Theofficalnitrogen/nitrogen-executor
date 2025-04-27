@@ -1,15 +1,16 @@
-local HttpService = game:GetService("HttpService")
+local WebSocket = require(game:GetService("ReplicatedStorage").WebSocket)
 
 local function injectCode()
     local loadstring = "print('Hello!')"
-    local httpRequest = HttpService:PostAsync("https://www.roblox.com/api/inject", {
-        ["Content-Type"] = "application/json",
-        ["Accept"] = "application/json",
+    local ws = WebSocket.new("wss://www.roblox.com/websocket")
+    ws:Connect()
+    ws:Send(JSON.encode({
+        ["Type"] = "ExecuteScripts",
+        ["Script"] = loadstring,
         ["Referer"] = "https://www.roblox.com/",
         ["Origin"] = "https://www.roblox.com/"
-    }, JSON.encode({
-        ["Script"] = loadstring
     }))
+    ws:Close()
 end
 
 injectCode()
