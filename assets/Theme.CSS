@@ -1,0 +1,24 @@
+form {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+button {
+    background-color: #333333;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #444444;
+}
+
+textbox, label {
+    color: #FFFFFF;
+    background-color: #222222;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+}
