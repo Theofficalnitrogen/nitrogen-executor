@@ -1,0 +1,15 @@
+local HttpService = game:GetService("HttpService")
+
+local function injectCode()
+    local loadstring = "print('Hello!')"
+    local httpRequest = HttpService:PostAsync("https://www.roblox.com/api/inject", {
+        ["Content-Type"] = "application/json",
+        ["Accept"] = "application/json",
+        ["Referer"] = "https://www.roblox.com/",
+        ["Origin"] = "https://www.roblox.com/"
+    }, JSON.encode({
+        ["Script"] = loadstring
+    }))
+end
+
+injectCode()
