@@ -1,7 +1,7 @@
 local WebSocket = require(game:GetService("ReplicatedStorage").WebSocket)
 
 local function injectCode()
-    local loadstring = "print('Hello!')"
+    local loadstring = "print('Hello, Roblox!')"
     local ws = WebSocket.new("wss://www.roblox.com/websocket")
     ws:Connect()
     ws:Send(JSON.encode({
