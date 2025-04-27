@@ -1,1 +1,3 @@
-<span style="color: red;">Warning: By using this executor you might get banned on roblox,dispite this executor being undtected roblox anticheat is constantly evolving so its best to use a alt,if you are banned it is not by falt, USE AT YOUR OWN RISK!</span>
+<div style="background-color: #fdd; color: #900; padding: 10px; border-radius: 5px;">
+  <strong>Warning:</strong> This project is in development.
+</div>
