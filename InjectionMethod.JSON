@@ -14,3 +14,7 @@ local function injectCode()
 end
 
 injectCode()
+
+
+
+NOTE: THIS IS AN INJECTION METHOD WHICH IS WEBSOCKET WHICH IS THE ONE USED IN THE EXECUTOR
